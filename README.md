@@ -50,7 +50,7 @@ function execute() {
 $webserver="/home/kali/your_directory_to_serve_as_webserver"
 
 inotifywait --recursive --monitor --format "%e %w%f" \
---event modify,move,create,delete /home/kali/Shared/webserver \
+--event modify,move,create,delete $webserver \
 | while read changed; do
     echo $changed
     find /$webserver -type f -exec cp {} /var/www/ \;
