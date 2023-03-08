@@ -94,3 +94,5 @@ sudo systemctl enable inotify.custom.service
 ## Credit
 
 https://github.com/emad-elsaid/dirtree
+
+https://www.baeldung.com/linux/command-execute-file-dir-change
