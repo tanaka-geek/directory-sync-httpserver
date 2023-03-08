@@ -43,14 +43,15 @@ if [ -z "$(which inotifywait)" ]; then
     exit 1
 fi
 
-$webserver="/home/kali/your_directory_to_serve_as_webserver"
+$syncfolder="/home/kali/originalFolder"
+$webserver="/var/www/"
 
 inotifywait --recursive --monitor --format "%e %w%f" \
---event modify,move,create,delete $webserver \
+--event modify,move,create,delete $syncfolder \
 | while read changed; do
     echo $changed
-    find /$webserver -type f -exec cp {} /var/www/ \;
-    cd $webserver && dirtree -o /var/www/index.html **/* *
+    find /$syncfolder -type f -exec cp {} $webserver \;
+    cd $webserver && dirtree -o ${webserver}index.html **/* *
 done
 ```
 
