@@ -30,7 +30,9 @@ sudo apt install inotify-tools
 
 ## Set up a script
 
-Use `inotify`, the most efficient monitoring tool for *nix system.
+Uses `inotify`, the most efficient monitoring tool for *nix system.
+
+it watches if any changes applied to directory, it runs a task.
 
 Use webserver of your choice such as Nginx,Apache,etc. 
 
