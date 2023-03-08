@@ -57,7 +57,7 @@ done
 
 ## Set up a Service
 
-Run as service, place this file at `/etc/systemd/system`
+Save this file at `/etc/systemd/system/inotify.custom.service`
 
 ```
 [Install]
