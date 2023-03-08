@@ -50,7 +50,7 @@ inotifywait --recursive --monitor --format "%e %w%f" \
 --event modify,move,create,delete $syncfolder \
 | while read changed; do
     echo $changed
-    find /$syncfolder -type f -exec cp {} $webserver \;
+    find $syncfolder -type f -exec cp {} $webserver \;
     cd $webserver && dirtree -o ${webserver}index.html **/* *
 done
 ```
