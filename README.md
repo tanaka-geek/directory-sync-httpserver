@@ -13,7 +13,7 @@ Folder2
 - script4.ps1
 ```
 
-If you want to download file at `wget http://server/Folder1/script.ps1`, it's tedious to specify `Folder1`.
+Let's say, you want to download file at `wget http://server/Folder1/script.ps1`, it's tedious to specify `Folder1`.
 
 To save time, this custom service was created. Front all the files at root `http://server/script3.ps1` as such.
 
