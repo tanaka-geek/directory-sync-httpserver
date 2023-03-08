@@ -31,7 +31,7 @@ Use `inotify`, the most efficient monitoring tool for *nix system.
 
 Use webserver of your choice such as Nginx,Apache,etc. 
 
-place this file at `/etc/inotify.custom/run.sh
+place this file at `/etc/inotify.custom/run.sh`
 
 
 ```bash
