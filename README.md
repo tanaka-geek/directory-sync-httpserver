@@ -2,7 +2,7 @@
 
 Better visual and organized, just what you need!
 
-Your web server directory looks like this and you just want to front all the files at root, so you don't have to remember which folder has which files. For example, `wget http://server/script.ps1` is easier than `wget http://server/Folder1/script.ps1`.
+you just want to front all the files at root, so you don't have to remember which folder has which files. For example, your webserver's directory looks like this.
 
 ```
 Folder1
@@ -13,8 +13,11 @@ Folder2
 - script4.ps1
 ```
 
-To save time, this custom service was created.
-Also, to better visualize the web server's directory.
+If you want to download file at `wget http://server/Folder1/script.ps1`, it's tedious to specify `Folder1`.
+
+To save time, this custom service was created. Front all the files at root `http://server/script3.ps1` as such.
+
+The visualized image of your webserver is accessible at `http://server/index.html` by default.
 
 ![this](image.png)
 
