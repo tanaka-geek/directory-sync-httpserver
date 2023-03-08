@@ -43,14 +43,6 @@ if [ -z "$(which inotifywait)" ]; then
     exit 1
 fi
 
-counter=0;
-
-function execute() {
-    counter=$((counter+1))
-    echo "Detected change n. $counter"
-    eval "$@"
-}
-
 $webserver="/home/kali/your_directory_to_serve_as_webserver"
 
 inotifywait --recursive --monitor --format "%e %w%f" \
@@ -59,8 +51,6 @@ inotifywait --recursive --monitor --format "%e %w%f" \
     echo $changed
     find /$webserver -type f -exec cp {} /var/www/ \;
     cd $webserver && dirtree -o /var/www/index.html **/* *
-    #echo $changed
-    #execute "$@"
 done
 ```
 
