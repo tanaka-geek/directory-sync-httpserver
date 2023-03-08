@@ -1,6 +1,6 @@
 # directory-sync-httpserver
 
-Better visual and organized, just what you need!
+Better visual and organisation, just what you need!
 
 you just want to front all the files at root, so you don't have to remember which folder has which files. For example, your webserver's directory looks like this.
 
