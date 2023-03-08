@@ -1,4 +1,4 @@
-# beautify-lab-server
+# directory-sync-httpserver
 
 Better visual and organized, just what you need!
 
